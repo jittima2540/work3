@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <div class="list">
+<a ui-sref="Home" class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+<a ui-sref="login"><button class="button ">
+  Home
+</button></a>
+<a ui-sref="history"><button class="button ">
+  HISTORY
+</button></a>
+<a ui-sref="option"><button class="button ">
+  OPTION
+</button></a>
+    <a ng-repeat = "list in datalist" class="item item-thumbnail-left">
+      <img src="{{list.pic}}">
+      <h2>{{list.fname}}</h2>
+      <p>{{list.lname}}</p>
+    </a>
+
+</div>
+ </body>
+</html>
+
